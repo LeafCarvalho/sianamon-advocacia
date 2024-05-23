@@ -1,0 +1,9 @@
+/* Altera a cor de fundo do painel à esquerda */
+#adminmenu, #adminmenu .wp-submenu, #adminmenuback, #adminmenuwrap {
+    -background: #f8f8f8;
+}
+
+/* Altera a cor do texto do painel à esquerda */
+#adminmenu div.wp-menu-name {
+    -color: #4b1701;
+}
