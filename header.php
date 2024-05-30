@@ -14,59 +14,32 @@
 
 <body <?php body_class(); ?>>
     <?php personal_options('tag_body'); ?>
-    <header id="secHeader"> 
-        <!-- Desktop -->
-        <nav class="d-none d-lg-block">
+    <header id="secHeader">
+        <nav class="navbar navbar-expand-lg navbar-light">
           <div class="container">
-            <div class="row">
-              <div class="col-12 d-flex align-items-center">
-                <div class="col-lg-6 logo-personal">
-                <a href="<?php echo esc_url( home_url( '/' ) ); ?>">
-                    <img class="logoHeader" src="<?php echo esc_url( get_theme_mod('image_header') ); ?>" alt="<?php bloginfo('name'); ?>" class="align-middle">
-                </a>
-                </div>
-                <div class="col-lg-6 col-xl-6 conteudo-site">
-                   <?php $defaults = array(
-                    'theme_location'  => 'header-menu',
-                    'container'       => 'ul',
-                    'menu_id'         => 'menu',
-                    'menu_class'      => 'itens-pagina-site',
-                    'echo'            => true
-                  );
-                  wp_nav_menu($defaults); ?>
-                </div>
-              </div>
-            </div>
-          </div>
-        </nav>
-        <!-- Mobile -->
-        <nav class="d-lg-none">
-          <div class="container-fluid">
-            <div class="row">
-              <div class="col-9 logo-personal-mobile">
-               <a  href="<?php echo esc_url( home_url( '/' ) ); ?>">
-                <img class="logo-tema-claro" src="<?php personal_options('header_logo'); ?>" alt="<?php bloginfo('name'); ?>" class="align-middle" alt="">
-                </a>
-              </div>
-              <div class="col-3 menu-mobile">
-                <button class="btn-open-submenu">
-                  <i class="fa-solid fa-bars"></i>
-                </button>
-                <div class="submenu" id="open-submenu-mobile">
-                  <div class="fechar-menu-mobile">
-                    <i class="fa-solid fa-xmark"></i>
-                  </div>                  
-                  <?php $defaults = array(
-                    'theme_location'  => 'header-menu',
-                    'container'       => 'ul',
-                    'menu_id'         => 'menu',
-                    'menu_class'      => 'menu-navegacao-mobile',
-                    'echo'            => true
-                  );
-                  wp_nav_menu($defaults); ?>
-                </div>
-              </div>
+            <a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>">
+            <img class="logoHeader" src="<?php echo esc_url( get_theme_mod('image_header') ); ?>" alt="<?php bloginfo('name'); ?>" class="align-middle">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <?php
+              $defaults = array(
+                'theme_location'  => 'header-menu',
+                'container'       => false,
+                'menu_id'         => 'menu',
+                'menu_class'      => 'navbar-nav ms-auto',
+                'echo'            => true,
+                'walker'          => new WP_Bootstrap_Navwalker()
+              );
+              wp_nav_menu($defaults); ?>
             </div>
           </div>
         </nav>
     </header>
+
+    <?php wp_footer(); ?>
+    <?php personal_options('tag_body_footer'); ?>
+</body>
+</html>

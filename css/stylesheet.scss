@@ -47,13 +47,157 @@ li {
             }
         }
     }
+    
+}
+
+//Home
+#conteudo-topo {
+    img {
+        height: 424px;
+        width: 100%;
+        object-fit: cover;
+    }
+    h1 {
+        color: #29465B;
+        letter-spacing: 1px;
+        font-size: 52px;
+        font-weight: 700;
+    }
+    p {
+        font-size: 20px;
+        letter-spacing: 0.3px;
+        line-height: 1.5;
+        font-weight: 500;
+    }
+}
+
+//Quem Somos
+#quem-somos {
+    margin-top: 2.75rem;
+    > div > div > div {
+        > div {
+            &:first-child {
+                h2 {
+                    color: #29465B;
+                    font-size: 48px;
+                    font-weight: 600;
+                    letter-spacing: 0.75px;
+                }
+                p {
+                    font-size: 18px;
+                    letter-spacing: 0.25px;
+                    line-height: 1.5;
+                    font-weight: 500;
+                }
+            }
+            &:last-child {
+                img {
+                    height: 424px;
+                    width: 100%;
+                    object-fit: cover;
+                    border-radius: 16px;
+                }
+            }
+        }
+    }
+}
+
+//Nossos Números
+#nossos-numeros {
+    margin-top: 2.75rem;
+}
+
+//Nossas Áreas
+#nossas-areas {
+    margin-top: 2.75rem;
+}
+.nossas-areas-slider {
+    .slider-item {
+        position: relative;
+        overflow: hidden;
+        padding: 0 15px; // Half of the space between slides
+
+        img {
+            width: 100%;
+            height: 290px;
+            object-fit: cover; // Ensures the image covers the area with the specified height
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+
+            h3 {
+                margin: 0;
+                font-size: 1.5rem;
+            }
+
+            .content {
+                padding: 10px;
+                text-align: center;
+            }
+        }
+
+        &:hover .overlay {
+            opacity: 1;
+        }
+    }
+
+    // Adjust for the extra padding
+    .slick-list {
+        margin: 0 -15px;
+    }
+}
+
+
+
+//Contato
+#nossos-contatos {
+    margin-top: 2.75rem;
 }
 
 //Footer
 #footer {
+    padding: 1.5rem 0 1rem 0;
     background-color: #29465B;
+    a, p, span {
+        color: #FFFFFF;
+    }
+    .infos-footer {
+        p {
+            font-weight: 400;
+            font-size: 14px;
+            letter-spacing: 0.25px;
+            line-height: 1.5;
+
+            &:nth-child(2) {
+                margin: 0.75rem 0;
+            }
+        }
+    }
     .logoFooter {
         height: 77px;
-        width: auto;       
+        width: auto;   
+    }
+    .text-copyright {
+        padding-top: 1rem;
+        border-top: 2px solid #FFFFFF;
+        p, span {
+            font-weight: 400;
+            font-size: 16px;
+            letter-spacing: 0.25px;
+            line-height: 1.5;
+        }
     }
 }
