@@ -52,6 +52,9 @@ li {
 
 //Home
 #conteudo-topo {
+    > div {
+        background-color: #F0EDE5;
+    }
     img {
         height: 424px;
         width: 100%;
@@ -105,6 +108,40 @@ li {
 //Nossos Números
 #nossos-numeros {
     margin-top: 2.75rem;
+    > div > div > div > div {
+        background-color: #F0EDE5;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 34px 24px 36px 24px;
+        h2 {
+            color: #29465B;
+            font-size: 36px;
+            font-weight: 700;
+            margin-bottom: 24px;
+        }
+        .nossos-numeros-post {
+            background-color: #FFFFFF;
+            border-radius: 8px;
+            &:nth-child(even) {
+                margin: 0 24px;
+            }
+            > div {
+                padding: 48px 0;
+                h3 {
+                    font-size: 62px;
+                    font-weight: 300;
+                    color: #29465B;
+                }
+                p {
+                    font-size: 14px;
+                    letter-spacing: 0.25px;
+                    font-weight: 500;
+                }
+            }
+        }
+    }
 }
 
 //Nossas Áreas

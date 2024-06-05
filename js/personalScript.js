@@ -81,3 +81,32 @@ jQuery(document).ready(function($) {
   });
 });
 
+$(document).ready(function() {
+  $('.odometer').each(function() {
+      var $this = $(this);
+      var finalValue = parseInt($this.data('value'), 10);
+      var currentValue = 0;
+      var increment;
+      
+      if (finalValue <= 500) {
+          increment = 3;
+      } else if (finalValue <= 5000) {
+          increment = 50;
+      } else {
+          increment = 40000;
+      }
+      
+      function updateValue() {
+          if (currentValue < finalValue) {
+              currentValue += increment;
+              if (currentValue > finalValue) {
+                  currentValue = finalValue;
+              }
+              $this.text(currentValue);
+              setTimeout(updateValue, 50);
+          }
+      }
+      
+      updateValue();
+  });
+});
