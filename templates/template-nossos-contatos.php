@@ -1,6 +1,6 @@
 <div class="container">
     <div class="row">
-        <div class="col-12 d-flex">
+        <div class="col-12 d-flex justify-content-between">
             <div class="col-lg-6 w-auto">
                 <img src="<?php the_field('imagem_contato') ?>" alt="">
             </div>
