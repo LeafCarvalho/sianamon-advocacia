@@ -1,4 +1,4 @@
-<div class="d-flex justify-content-center align-items-center">
+<div class="d-flex justify-content-center align-items-center flex-lg-row flex-md-column-reverse flex-sm-column-reverse">
     <img src="<?php the_field('imagem_integrantes') ?>" alt="">
     <div class="container">
         <div class="row">

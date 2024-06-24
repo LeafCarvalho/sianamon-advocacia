@@ -58,6 +58,9 @@ li {
     > div {
         background-color: #F0EDE5;
     }
+    .col-12 {
+        padding: 40px 0;
+    }
     img {
         height: 424px;
         width: 100%;
@@ -79,7 +82,7 @@ li {
 
 //Quem Somos
 #quem-somos {
-    margin-top: 2.75rem;
+    margin-top: 3.5rem;
     > div > div > div {
         > div {
             &:first-child {
@@ -110,7 +113,7 @@ li {
 
 //Nossos Números
 #nossos-numeros {
-    margin-top: 2.75rem;
+    margin-top: 3.5rem;
     > div > div > div > div {
         background-color: #F0EDE5;
         display: flex;
@@ -149,7 +152,7 @@ li {
 
 //Nossas Áreas
 #nossas-areas {
-    margin-top: 2.75rem;
+    margin-top: 3.5rem;
 }
 .nossas-areas-slider {
     .slider-item {
@@ -204,7 +207,7 @@ li {
 
 //Contato
 #nossos-contatos {
-    margin-top: 2.75rem;
+    margin-top: 3.5rem;
     form {
         display: inline-block;
         label {
