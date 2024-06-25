@@ -1,40 +1,34 @@
-# README #
+# Sianamon Advocacia
 
-This README would normally document whatever steps are necessary to get your application up and running.
+O Projeto Sianamon Advocacia foi desenvolvido em WordPress, com um tema desenvolvido do total zero. Este projeto é uma landing page para um escritório de advocacia que atende diversas áreas do direito, incluindo Direito Civil, Penal, Ambiental, entre outras.
 
-### What is this repository for? ###
+## Tecnologias Utilizadas
 
-* Quick summary
-* Version
-* [Learn Markdown](https://bitbucket.org/tutorials/markdowndemo)
+- **JavaScript**
+- **HTML**
+- **AJAX**
+- **jQuery**
+- **PHP**
+- **Bootstrap**
+- **SCSS**
 
-### How do I get set up? ###
+## Objetivo do Projeto
 
-* Summary of set up
-* Configuration
-* Dependencies
-* Database configuration
-* How to run tests
-* Deployment instructions
+A ideia deste projeto é demonstrar uma boa capacidade de uso das ferramentas, proporcionando aos usuários e administradores:
+- Facilidade de uso
+- Personalização conforme necessário
+- Responsividade, permitindo acesso tanto via web quanto mobile
+- Boa performance e SEO, utilizando imagens no formato WEBP e compiladores com a ferramenta Gulp para JavaScript e estilos.
 
-### Contribution guidelines ###
+## Instalação
 
-* Writing tests
-* Code review
-* Other guidelines
+Para configurar o projeto localmente e utilizar o tema criado, siga os passos abaixo:
+*Observação: A clonagem total deste projeto só é plenamente possível por meio de ferramentas para backup deste, então plugins e modificações realizados no próprio Wordpress não estarão disponíveis ao cloná-lo, sendo vísivel somente o tema personalizado.*
 
-### Who do I talk to? ###
+1. **Clone o repositório:**
+   ```bash
+   git clone https://github.com/seu-usuario/seu-repositorio.git
+   cd seu-repositorio
 
-* Repo owner or admin
-* Other community or team contact
+## Pré-visualização da experiência do usuário
 
-Caso nunca tenha usado gulp:
-npm install --global gulp-cli
-npm install --save-dev gulp
-npm install
-gulp
-
-Caso já tenha usado gulp
-npm install --save-dev gulp
-npm install
-gulp
