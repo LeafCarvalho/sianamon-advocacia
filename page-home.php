@@ -40,7 +40,7 @@ get_header();
     ?>
   </section>
   
-  <div class="container">
+  <!-- <div class="container">
       <div class="row">
         <div class="col-12">
           teste
@@ -50,7 +50,7 @@ get_header();
         <a href="<?php echo $whatsapp_url; ?>" target="_blank">WhatsApp</a>
         </div>
       </div>
-  </div>
+  </div> -->
 </main>
 
 <?php

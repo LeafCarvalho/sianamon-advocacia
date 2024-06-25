@@ -78,6 +78,20 @@ li {
         line-height: 1.5;
         font-weight: 500;
     }
+    //responsividade
+    @media (max-width: 992px) {
+        .col-12 {
+            text-align: center;
+        }
+    }
+    @media (max-width: 576px) {
+        > div {
+            flex-direction: column-reverse;
+            .col-12 {
+                text-align: center;
+            }
+        }
+    }
 }
 
 //Quem Somos
@@ -107,6 +121,29 @@ li {
                     border-radius: 16px;
                 }
             }
+        }
+    }
+    @media (max-width: 992px) {
+        > div > div > div {
+            gap: 16px;
+        }
+    }
+    @media (max-width: 768px) {
+        > div > div > div > div  {
+            &:first-child {
+                h2 {
+                    text-align: center;
+                }
+                p {
+                    text-align: justify;
+                }
+            }
+        }
+    }
+    @media (max-width: 576px) {
+        > div > div > div {
+            flex-direction: column-reverse;
+            gap: 16px;
         }
     }
 }
@@ -148,11 +185,72 @@ li {
             }
         }
     }
+    //responsividade
+    @media (max-width: 992px) {
+        > div > div > div > div > div {
+            &:last-child {
+                gap: 1.5rem;
+                > .col-4 {
+                    width: 100%;
+                }
+            }
+        }
+    }
+    @media (max-width: 576px) {
+        > div > div > div > div > div {
+            &:last-child {
+                flex-direction: column;
+            }
+        }
+    }
 }
 
 //Nossas Áreas
 #nossas-areas {
     margin-top: 3.5rem;
+    > div > div {
+        &:first-child {
+            > div {
+                margin-bottom: 1rem;
+            }
+        }
+    }
+    .slick-prev {
+        left: -45px !important;
+        background-image: url('../img/left-arrow-areas.svg');
+        background-repeat: no-repeat;
+        width: 35px;
+        height: 35px;
+
+        &:before {
+            display: none;
+        }
+    }
+    .slick-next {
+        right: -45px !important;
+        background-image: url('../img/right-arrow-areas.svg');
+        background-repeat: no-repeat;
+        width: 35px;
+        height: 35px;
+
+        &:before {
+            display: none;
+        }
+    }
+    .slick-dots {
+        bottom: -30px !important;
+    }
+    .slick-dots li button:before {
+        font-size: 16px !important;
+    }
+    .slick-dots li.slick-active button:before {
+        color: #29465B !important;
+    }
+    @media (max-width: 768px) {
+        .nossas-areas-slider .slider-item {
+            padding: 0;
+        }
+    }
 }
 .nossas-areas-slider {
     .slider-item {
@@ -208,6 +306,13 @@ li {
 //Contato
 #nossos-contatos {
     margin-top: 3.5rem;
+    > div > div > div > div {
+        &:first-child {
+            img {
+                width: 100%;
+            }
+        }
+    }
     form {
         display: inline-block;
         label {
@@ -256,6 +361,33 @@ li {
     #wpcf7-f8-o1 > form > p:nth-child(6) > span {
         display: none;
     }
+    @media (min-width: 1800px) {
+        .wpcf7-form-control:not(.wpcf7-submit) {
+            width: 590px;
+            max-width: 100%;
+        }
+    }
+    @media (max-width: 1200px) {
+        > div > div > div {
+            flex-direction: column;
+            align-items: center;
+            gap: 24px;
+        }
+    }
+    @media (max-width: 992px) {
+        .wpcf7-form-control:not(.wpcf7-submit) {
+            width: 67vw;
+        }
+    }
+    @media (max-width: 576px) {
+        > div > div > div > div {
+            &:first-child {
+                img {
+                    display: none;
+                }
+            }
+        }
+    }
 }
 
 //Footer
@@ -291,6 +423,23 @@ li {
             line-height: 1.5;
         }
     }
+    @media (max-width: 992px) {
+        .footerContent {
+            flex-direction: column-reverse;
+            > div {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+        .text-copyright {
+            flex-direction: column;
+            gap: 10px;
+            > div:last-child, p {
+                text-align: center;
+            }
+        }
+    }
 }
 
 @media (min-width: 2001px) {
@@ -298,9 +447,14 @@ li {
         width: 25vw;
     }
 }
-    @media (min-width: 1800px) and (max-width: 2000px) {
+@media (min-width: 1800px) and (max-width: 2000px) {
     .wpcf7-form-control {
         width: 27vw;
+    }
+}
+@media (min-width: 992px) and (max-width: 1200px) {
+    .wpcf7-form-control {
+        width: 30vw;
     }
 }
 @media (max-width: 600px) {
@@ -308,3 +462,28 @@ li {
         width: 76vw;
     }
 }
+@mixin nossos-numeros-estilos {
+    #nossos-numeros>div>div>div>div .nossos-numeros-post>div {
+      h3 {
+        font-size: 48px;
+      }
+      p {
+        font-size: 12px;
+      }
+    }
+    #nossos-numeros>div>div>div>div h2 {
+      font-size: 24px;
+    }
+  }
+  
+  @media (max-width: 425px) {
+    @include nossos-numeros-estilos;
+  }
+  
+  @media (min-width: 992px) and (max-width: 1200px) {
+    @include nossos-numeros-estilos;
+
+    #nossos-contatos .wpcf7-form-control:not(.wpcf7-submit) {
+        width: 650px;
+    }
+  }
