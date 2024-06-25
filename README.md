@@ -27,8 +27,8 @@ Para configurar o projeto localmente e utilizar o tema criado, siga os passos ab
 
 1. **Clone o repositório:**
    ```bash
-   git clone https://github.com/seu-usuario/seu-repositorio.git
-   cd seu-repositorio
+   git clone https://github.com/LeafCarvalho/sianamon-advocacia.git
+   cd sianamon-advocacia
 
 ## Pré-visualização da experiência do usuário
 
