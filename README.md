@@ -2,6 +2,10 @@
 
 O Projeto Sianamon Advocacia foi desenvolvido em WordPress, com um tema desenvolvido do total zero. Este projeto é uma landing page para um escritório de advocacia que atende diversas áreas do direito, incluindo Direito Civil, Penal, Ambiental, entre outras.
 
+## Pré-visualização da experiência do usuário
+
+![Design sem nome (1)](https://github.com/LeafCarvalho/sianamon-advocacia/assets/79648062/d5d17eb7-f56e-4e74-9cec-5190d33bb69a)
+
 ## Tecnologias Utilizadas
 
 <table>
@@ -62,5 +66,4 @@ Para configurar o projeto localmente e utilizar o tema criado, siga os passos ab
    git clone https://github.com/LeafCarvalho/sianamon-advocacia.git
    cd sianamon-advocacia
 
-## Pré-visualização da experiência do usuário
 
